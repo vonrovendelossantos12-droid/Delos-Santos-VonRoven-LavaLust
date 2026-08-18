@@ -130,50 +130,50 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 <body>
     <div class="container">
         <div style="padding: 15px; background: #f8f9fa; margin-bottom: 20px; text-align: center;">
-            <a href="<?php echo site_url(''); ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Home</a> | 
-            <a href="<?php echo site_url('student'); ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Info</a> | 
-            <a href="<?php echo site_url('student/profile'); ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Profile</a>
+            <a href="<?= site_url('') ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Home</a> | 
+            <a href="<?= site_url('student') ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Info</a> | 
+            <a href="<?= site_url('student/profile') ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Profile</a>
         </div>
 
         <div class="header-section">
-            <div class="student-id-badge">ID: <?php echo $student_id; ?></div>
+            <div class="student-id-badge">ID: <?php echo $student_id ?? 'N/A'; ?></div>
             <h1>Student Information</h1>
-            <div class="student-name"><?php echo $name; ?></div>
+            <div class="student-name"><?php echo $name ?? 'N/A'; ?></div>
         </div>
 
         <div class="info-group">
             <span class="info-label">Student ID:</span>
-            <span class="info-value"><?php echo $student_id; ?></span>
+            <span class="info-value"><?php echo $student_id ?? 'N/A'; ?></span>
         </div>
 
         <div class="info-group">
             <span class="info-label">Full Name:</span>
-            <span class="info-value"><?php echo $name; ?></span>
+            <span class="info-value"><?php echo $name ?? 'N/A'; ?></span>
         </div>
 
         <div class="info-group">
             <span class="info-label">Course:</span>
-            <span class="info-value"><?php echo $course; ?></span>
+            <span class="info-value"><?php echo $course ?? 'N/A'; ?></span>
         </div>
 
         <div class="info-group">
             <span class="info-label">Year Level:</span>
-            <span class="info-value"><?php echo $year; ?></span>
+            <span class="info-value"><?php echo $year ?? 'N/A'; ?></span>
         </div>
 
         <div class="info-group">
             <span class="info-label">Section:</span>
-            <span class="info-value"><?php echo $section; ?></span>
+            <span class="info-value"><?php echo $section ?? 'N/A'; ?></span>
         </div>
 
         <div class="info-group">
             <span class="info-label">Email:</span>
-            <span class="info-value"><?php echo $email; ?></span>
+            <span class="info-value"><?php echo $email ?? 'N/A'; ?></span>
         </div>
 
         <div class="action-buttons">
-            <button class="btn btn-primary" onclick="window.location.href='<?php echo site_url('student/profile'); ?>'">View Profile</button>
-            <button class="btn btn-secondary" onclick="window.location.href='<?php echo site_url(''); ?>'">Home</button>
+            <button class="btn btn-primary" onclick="window.location.href='<?= site_url('student/profile') ?>'">View Profile</button>
+            <button class="btn btn-secondary" onclick="window.location.href='<?= site_url('') ?>'">Home</button>
         </div>
     </div>
 </body>

@@ -155,15 +155,15 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 <body>
     <div class="container">
         <div style="padding: 15px; background: #f8f9fa; text-align: center;">
-            <a href="<?php echo site_url(''); ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Home</a> | 
-            <a href="<?php echo site_url('student'); ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Info</a> | 
-            <a href="<?php echo site_url('student/profile'); ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Profile</a>
+            <a href="<?= site_url('') ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Home</a> | 
+            <a href="<?= site_url('student') ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Info</a> | 
+            <a href="<?= site_url('student/profile') ?>" style="text-decoration: none; color: #667eea; margin: 0 10px;">Student Profile</a>
         </div>
 
         <div class="profile-header">
             <div class="profile-avatar">👤</div>
-            <div class="profile-name"><?php echo $name; ?></div>
-            <div class="profile-id">Student ID: <?php echo $student_id; ?></div>
+            <div class="profile-name"><?php echo $name ?? 'N/A'; ?></div>
+            <div class="profile-id">Student ID: <?php echo $student_id ?? 'N/A'; ?></div>
         </div>
 
         <div class="profile-content">
@@ -172,15 +172,15 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
                 <div class="academic-info">
                     <div class="profile-item">
                         <span class="profile-label">Course:</span>
-                        <span class="profile-value"><?php echo $course; ?></span>
+                        <span class="profile-value"><?php echo $course ?? 'N/A'; ?></span>
                     </div>
                     <div class="profile-item">
                         <span class="profile-label">Year Level:</span>
-                        <span class="profile-value"><?php echo $year; ?></span>
+                        <span class="profile-value"><?php echo $year ?? 'N/A'; ?></span>
                     </div>
                     <div class="profile-item">
                         <span class="profile-label">Section:</span>
-                        <span class="profile-value"><?php echo $section; ?></span>
+                        <span class="profile-value"><?php echo $section ?? 'N/A'; ?></span>
                     </div>
                 </div>
             </div>
@@ -190,22 +190,22 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
                 <div class="contact-info">
                     <div class="profile-item">
                         <span class="profile-label">Email:</span>
-                        <span class="profile-value"><?php echo $email; ?></span>
+                        <span class="profile-value"><?php echo $email ?? 'N/A'; ?></span>
                     </div>
                     <div class="profile-item">
                         <span class="profile-label">Phone:</span>
-                        <span class="profile-value"><?php echo $phone; ?></span>
+                        <span class="profile-value"><?php echo $phone ?? 'N/A'; ?></span>
                     </div>
                     <div class="profile-item">
                         <span class="profile-label">Address:</span>
-                        <span class="profile-value"><?php echo $address; ?></span>
+                        <span class="profile-value"><?php echo $address ?? 'N/A'; ?></span>
                     </div>
                 </div>
             </div>
 
             <div class="action-buttons">
-                <button class="btn btn-primary" onclick="window.location.href='<?php echo site_url('student'); ?>'">Back to Info</button>
-                <button class="btn btn-secondary" onclick="window.location.href='<?php echo site_url(''); ?>'">Home</button>
+                <button class="btn btn-primary" onclick="window.location.href='<?= site_url('student') ?>'">Back to Info</button>
+                <button class="btn btn-secondary" onclick="window.location.href='<?= site_url('') ?>'">Home</button>
             </div>
         </div>
     </div>
