@@ -41,20 +41,6 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             text-align: center;
         }
 
-        .profile-avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: white;
-            margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5em;
-            color: #333;
-            border: 2px solid #ccc;
-        }
-
         .profile-name {
             font-size: 1.5em;
             margin-bottom: 5px;
@@ -159,7 +145,6 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         </div>
 
         <div class="profile-header">
-            <div class="profile-avatar">👤</div>
             <div class="profile-name"><?php echo $name ?? 'N/A'; ?></div>
             <div class="profile-id">Student ID: <?php echo $student_id ?? 'N/A'; ?></div>
         </div>
