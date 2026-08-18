@@ -127,8 +127,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
     <div class="container">
         <div style="padding: 15px; background: #f8f9fa; margin-bottom: 20px; text-align: center;">
             <a href="<?= site_url('') ?>" style="text-decoration: none; color: #333; margin: 0 10px;">Home</a> | 
-            <a href="<?= site_url('student') ?>" style="text-decoration: none; color: #333; margin: 0 10px;">Student Info</a> | 
-            <a href="<?= site_url('student/profile') ?>" style="text-decoration: none; color: #333; margin: 0 10px;">Student Profile</a>
+            <a href="<?= site_url('student') ?>" style="text-decoration: none; color: #333; margin: 0 10px;">Student Info</a>
         </div>
 
         <div class="header-section">
@@ -168,7 +167,6 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         </div>
 
         <div class="action-buttons">
-            <button class="btn btn-primary" onclick="window.location.href='<?= site_url('student/profile') ?>'">View Profile</button>
             <button class="btn btn-secondary" onclick="window.location.href='<?= site_url('') ?>'">Home</button>
         </div>
     </div>
