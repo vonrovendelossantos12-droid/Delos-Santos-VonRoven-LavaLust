@@ -17,7 +17,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f5;
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -27,42 +27,42 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         .container {
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             max-width: 700px;
             width: 100%;
             overflow: hidden;
         }
 
         .profile-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #ff8c00;
             color: white;
-            padding: 40px;
+            padding: 30px;
             text-align: center;
         }
 
         .profile-avatar {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background: white;
-            margin: 0 auto 20px;
+            margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3em;
-            color: #667eea;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            font-size: 2.5em;
+            color: #ff8c00;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .profile-name {
-            font-size: 2em;
+            font-size: 1.5em;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
         .profile-id {
-            font-size: 0.9em;
+            font-size: 0.85em;
             opacity: 0.9;
         }
 
@@ -75,24 +75,24 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .section-title {
-            font-size: 1.3em;
-            color: #667eea;
+            font-size: 1.1em;
+            color: #ff8c00;
             font-weight: 600;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #ff8c00;
+            padding-bottom: 8px;
         }
 
         .profile-item {
             display: grid;
-            grid-template-columns: 150px 1fr;
-            margin-bottom: 12px;
-            padding: 10px 0;
+            grid-template-columns: 140px 1fr;
+            margin-bottom: 10px;
+            padding: 8px 0;
         }
 
         .profile-label {
             font-weight: 600;
-            color: #555;
+            color: #666;
         }
 
         .profile-value {
@@ -100,16 +100,18 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .academic-info {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-left: 3px solid #ff8c00;
         }
 
         .contact-info {
-            background: #f0f4ff;
-            padding: 20px;
-            border-radius: 8px;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #ff8c00;
         }
 
         .action-buttons {
@@ -131,14 +133,14 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .btn-primary {
-            background: #667eea;
+            background: #ff8c00;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            background: #e67e00;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(255, 140, 0, 0.2);
         }
 
         .btn-secondary {

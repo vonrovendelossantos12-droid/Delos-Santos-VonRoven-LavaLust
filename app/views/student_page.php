@@ -17,7 +17,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f5f5f5;
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -27,42 +27,42 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         .container {
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             width: 100%;
-            padding: 40px;
+            padding: 30px;
         }
 
         h1 {
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: center;
-            font-size: 2em;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ff8c00;
+            padding-bottom: 10px;
         }
 
         .info-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
+            padding: 12px;
+            background: #fafafa;
+            border-radius: 6px;
+            border-left: 3px solid #ff8c00;
         }
 
         .info-label {
             font-weight: 600;
-            color: #555;
-            font-size: 1rem;
+            color: #666;
+            font-size: 0.95rem;
         }
 
         .info-value {
             color: #333;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 500;
         }
 
@@ -73,18 +73,18 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         .student-id-badge {
             display: inline-block;
-            background: #667eea;
+            background: #ff8c00;
             color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
             margin-bottom: 10px;
         }
 
         .student-name {
-            font-size: 1.8em;
+            font-size: 1.5em;
             color: #333;
-            margin: 10px 0;
+            margin: 8px 0;
         }
 
         .action-buttons {
@@ -106,14 +106,14 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .btn-primary {
-            background: #667eea;
+            background: #ff8c00;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            background: #e67e00;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(255, 140, 0, 0.2);
         }
 
         .btn-secondary {
