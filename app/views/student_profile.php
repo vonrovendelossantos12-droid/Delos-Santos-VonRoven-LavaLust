@@ -35,8 +35,8 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .profile-header {
-            background: #ff8c00;
-            color: white;
+            background: #e0e0e0;
+            color: #333;
             padding: 30px;
             text-align: center;
         }
@@ -51,8 +51,8 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             align-items: center;
             justify-content: center;
             font-size: 2.5em;
-            color: #ff8c00;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            border: 2px solid #ccc;
         }
 
         .profile-name {
@@ -76,10 +76,10 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         .section-title {
             font-size: 1.1em;
-            color: #ff8c00;
-            font-weight: 600;
+            color: #333;
+            font-weight: bold;
             margin-bottom: 12px;
-            border-bottom: 2px solid #ff8c00;
+            border-bottom: 1px solid #999;
             padding-bottom: 8px;
         }
 
@@ -100,18 +100,16 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .academic-info {
-            background: #fafafa;
+            background: #f0f0f0;
             padding: 15px;
-            border-radius: 6px;
+            border-radius: 3px;
             margin-bottom: 15px;
-            border-left: 3px solid #ff8c00;
         }
 
         .contact-info {
-            background: #fafafa;
+            background: #f0f0f0;
             padding: 15px;
-            border-radius: 6px;
-            border-left: 3px solid #ff8c00;
+            border-radius: 3px;
         }
 
         .action-buttons {
@@ -133,14 +131,12 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .btn-primary {
-            background: #ff8c00;
-            color: white;
+            background: #ccc;
+            color: #333;
         }
 
         .btn-primary:hover {
-            background: #e67e00;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 8px rgba(255, 140, 0, 0.2);
+            background: #bbb;
         }
 
         .btn-secondary {

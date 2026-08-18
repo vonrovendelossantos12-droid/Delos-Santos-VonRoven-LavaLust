@@ -39,7 +39,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             margin-bottom: 20px;
             text-align: center;
             font-size: 1.8em;
-            border-bottom: 2px solid #ff8c00;
+            border-bottom: 1px solid #999;
             padding-bottom: 10px;
         }
 
@@ -48,22 +48,20 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px;
-            background: #fafafa;
-            border-radius: 6px;
-            border-left: 3px solid #ff8c00;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 3px;
         }
 
         .info-label {
-            font-weight: 600;
-            color: #666;
+            font-weight: bold;
+            color: #333;
             font-size: 0.95rem;
         }
 
         .info-value {
             color: #333;
             font-size: 0.95rem;
-            font-weight: 500;
         }
 
         .header-section {
@@ -73,10 +71,10 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
         .student-id-badge {
             display: inline-block;
-            background: #ff8c00;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
+            background: #ddd;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 3px;
             font-size: 0.85rem;
             margin-bottom: 10px;
         }
@@ -106,14 +104,12 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         }
 
         .btn-primary {
-            background: #ff8c00;
-            color: white;
+            background: #ccc;
+            color: #333;
         }
 
         .btn-primary:hover {
-            background: #e67e00;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 8px rgba(255, 140, 0, 0.2);
+            background: #bbb;
         }
 
         .btn-secondary {
