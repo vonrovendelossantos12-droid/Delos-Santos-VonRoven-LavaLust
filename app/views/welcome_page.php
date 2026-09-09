@@ -65,7 +65,8 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             margin-top: 30px;
         }
 
-        button {
+        button,
+        .button {
             background-color: #999;
             color: white;
             padding: 10px 20px;
@@ -74,9 +75,12 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             cursor: pointer;
             font-size: 14px;
             margin-right: 10px;
+            text-decoration: none;
+            display: inline-block;
         }
 
-        button:hover {
+        button:hover,
+        .button:hover {
             background-color: #777;
         }
     </style>
@@ -84,7 +88,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 <body>
     <div class="container">
         <nav>
-            <a href="<?= site_url('') ?>">Home</a> | <a href="<?= site_url('student') ?>">Student Info</a>
+            <a href="<?= site_url('') ?>">Home</a> | <a href="<?= site_url('student') ?>">Student Info</a> | <a href="<?= site_url('users') ?>">Users</a>
         </nav>
 
         <h1>Welcome</h1>
@@ -94,7 +98,8 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         </div>
 
         <div class="action-buttons">
-            <button onclick="window.location.href='<?= site_url('student') ?>';">View Student Info</button>
+            <a class="button" href="<?= site_url('student') ?>">View Student Info</a>
+
         </div>
     </div>
 </body>

@@ -39,6 +39,8 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |--------------------------------------------------------------------------
 |
 | Used for adding middlewares
+| Note: Middleware configuration is now defined in config.php
 |
 */
-$config['middlewares'] = [];
+
+?>
